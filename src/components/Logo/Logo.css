@@ -1,0 +1,22 @@
+.Tilt {
+  background-color: #e7eaee;
+  position: relative;
+  opacity: 0.8;
+}
+.Tilt-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.app-name {
+  color: #2d3142;
+}
+.appLogo {
+  position: absolute;
+  top: 5%;
+}
+.logo-content {
+  padding: 1%;
+  top: 5%;
+}

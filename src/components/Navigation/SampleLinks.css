@@ -1,0 +1,15 @@
+.Collapsible__trigger {
+  margin: 2%;
+  font-weight: bold;
+}
+.Collapsible__contentOuter,
+.Collapsible__contentInner {
+  margin: 2%;
+}
+.Collapsible {
+  margin: 2%;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: start;
+}

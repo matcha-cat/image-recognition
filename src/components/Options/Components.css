@@ -1,0 +1,50 @@
+.myImage {
+  position: absolute;
+  left: 10%;
+  float: left;
+}
+.components-content {
+  margin-top: 2%;
+}
+.bounding-box-f {
+  position: absolute;
+  box-shadow: 0 0 0 3px red inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.bounding-box-d {
+  position: absolute;
+  box-shadow: 0 0 0 3px blue inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.table {
+  float: right;
+  background-color: white;
+  width: 25%;
+  font-size: 14px;
+  margin-right: 20%;
+  color: #3a4455;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1px;
+}
+.item-label {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.heading-label {
+  font-weight: bolder;
+  font-size: 18px;
+}
+.marked {
+  background-color: rgba(255, 255, 255, 1);
+}
