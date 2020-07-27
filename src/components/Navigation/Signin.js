@@ -25,12 +25,6 @@ class Signin extends React.Component {
   };
 
   onSubmitSignIn = () => {
-    var myString = JSON.stringify({
-      email: this.state.singInEmail,
-      password: this.state.signInPassword,
-    });
-    console.log(myString);
-    console.log(this.state.signInEmail, this.state.signInPassword);
     fetch('https://agile-castle-48443.herokuapp.com/signin', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },

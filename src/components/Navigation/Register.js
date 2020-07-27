@@ -22,7 +22,6 @@ class Register extends React.Component {
   };
 
   onSubmitSignIn = () => {
-    console.log(this.state.email, this.state.name, this.state.password);
     fetch('https://agile-castle-48443.herokuapp.com/register', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
