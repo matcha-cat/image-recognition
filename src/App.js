@@ -22,6 +22,8 @@ import Apparel from './components/Options/Apparel';
 import Food from './components/Options/Food';
 import SampleLinks from './components/Navigation/SampleLinks';
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+
 //setting up Clarifai api:
 const Clarifai = require('clarifai');
 const app = new Clarifai.App({
