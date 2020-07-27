@@ -206,7 +206,7 @@ class App extends Component {
         }
         //use a server to incriment the image count of a user
         if (response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://agile-castle-48443.herokuapp.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
