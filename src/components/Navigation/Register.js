@@ -12,13 +12,13 @@ class Register extends React.Component {
   }
 
   onNameChange = (event) => {
-    this.setState({ name: event.target.value }, console.log('name'));
+    this.setState({ name: event.target.value }, console.log(''));
   };
   onEmailChange = (event) => {
-    this.setState({ email: event.target.value }, console.log('email'));
+    this.setState({ email: event.target.value }, console.log(''));
   };
   onPasswordChange = (event) => {
-    this.setState({ password: event.target.value }, console.log('pw'));
+    this.setState({ password: event.target.value }, console.log(''));
   };
 
   onSubmitSignIn = () => {
@@ -35,8 +35,7 @@ class Register extends React.Component {
       .then((response) => response.json())
       .then((user) => {
         if (user) {
-          this.props.loadUser(user);
-          console.log(user);
+          this.props.loadUser();
           this.props.onRouteChange('home');
         }
       });

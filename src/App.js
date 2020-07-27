@@ -105,32 +105,32 @@ class App extends Component {
 
   //changing input and imageUrl:
   onInputChange = (event) => {
-    this.setState({ input: event.target.value }, console.log('input event'));
+    this.setState({ input: event.target.value }, console.log(''));
     this.setState({ imageUrl: event.target.value });
   };
 
   //this allows the content to be displayed only after the array has been passed through:
   displayContent = (boxes) => {
-    this.setState({ boxes: boxes }, console.log('boxes'));
+    this.setState({ boxes: boxes }, console.log(''));
     //fixes a small bug:
-    this.setState({ isLoaded: true }, console.log());
+    this.setState({ isLoaded: true }, console.log(''));
   };
 
   //changes the route:
   onRouteChange = (route) => {
     if (route === 'signout') {
-      this.setState(initialState, console.log('route: signout'));
+      this.setState(initialState, console.log(''));
     } else if (route === 'home') {
-      this.setState({ isSignedIn: true }, console.log('route: home'));
+      this.setState({ isSignedIn: true }, console.log(''));
     }
-    this.setState({ route: route }, console.log('route: home'));
+    this.setState({ route: route }, console.log(''));
   };
 
   //actions when one of the Options buttons is pressed:
   onButtonSubmit = (event) => {
     //resets this.state variables:
-    this.setState({ boxes: [''] }, console.log(this.state.boxes));
-    this.setState({ isLoaded: false }, console.log(this.state.isLoaded));
+    this.setState({ boxes: [''] }, console.log(''));
+    this.setState({ isLoaded: false }, console.log(''));
     this.setState(
       { option: event.target.value },
       console.log(event.target.value)
@@ -248,7 +248,7 @@ class App extends Component {
             <div className="details-options">
               <p>
                 Paste the link to the image below then click on one of the
-                following options:
+                following options (please note that some options may take a while to load):
               </p>
               <ol>
                 <li> Faces: detect and show all faces in an image</li>
