@@ -253,22 +253,18 @@ class App extends Component {
               <ol>
                 <li> Faces: detect and show all faces in an image</li>
                 <li>
-                  {' '}
                   Demographics: detect faces and output demographics for each
                   face
                 </li>
                 <li>
-                  {' '}
                   Objects: identify general common objects and concepts such as
                   people, emotions, places, and items
                 </li>
                 <li>
-                  {' '}
                   Colors: detect most popular colors in an image (in a HEX
-                  format){' '}
+                  format)
                 </li>
                 <li>
-                  {' '}
                   Apparel: identify possible apparel items such as clothing and
                   accessories
                 </li>
