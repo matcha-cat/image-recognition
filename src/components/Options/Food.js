@@ -27,7 +27,11 @@ const Food = ({ boxes, imageUrl }) => {
       </div>
       <ul className="table">
         <p className="heading-label">Food items identified:</p>
+        <div className="scrollbar">
+          <div className="force-overflow" id="style-1">
         <div className="parent">{foodArray}</div>
+        </div>
+        </div>
       </ul>
     </div>
   );

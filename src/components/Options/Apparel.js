@@ -60,7 +60,11 @@ const Apparel = ({ boxes, imageUrl, myHeight, myWidth }) => {
       </div>
       <ul className="table">
         <p className="heading-label">Apparel items identified:</p>
+        <div className="scrollbar">
+          <div className="force-overflow" id="style-1">
         <div className="parent">{apparelArray}</div>
+        </div>
+        </div>
       </ul>
     </div>
   );

@@ -56,6 +56,7 @@
   background-color: #F5F5F5;
   float: center;
   overflow-y: scroll;
+  align-self: center;
 }
 .force-overflow {
   min-height: 500px;
