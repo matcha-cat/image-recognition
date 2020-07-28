@@ -2,14 +2,11 @@ import React from 'react';
 import './Components.css';
 
 const Objects = ({ boxes, imageUrl }) => {
-  console.log('hello from objects');
-  console.log(boxes);
   var objectsArray = [];
   for (var i = 0; i < 20; i++) {
     var valueNum = boxes[i].value * 100;
     var name = boxes[i].name;
     var value = Math.round(valueNum);
-    console.log(name, value);
     objectsArray.push(<p>{name}</p>);
     objectsArray.push(<p>{value}%</p>);
   }

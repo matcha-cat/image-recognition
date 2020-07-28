@@ -2,7 +2,6 @@ import React from 'react';
 import './Components.css';
 
 const Food = ({ boxes, imageUrl }) => {
-  console.log('hello from food');
   var boxesNum = boxes.length;
   var foodArray = [];
 

@@ -2,14 +2,11 @@ import React from 'react';
 import './Components.css';
 
 const Colors = ({ boxes, imageUrl }) => {
-  console.log('hello from colors');
-  console.log(boxes);
   var colorsArray = [];
   colorsArray.push(<p>Color</p>);
   colorsArray.push(<p></p>);
   var boxesNum = boxes.length;
   for (var i = 0; i < boxesNum; i++) {
-    console.log(boxes[i]);
     var hex = boxes[i].raw_hex;
     var valueNum = boxes[i].value * 100;
     var value = Math.round(Number(valueNum));

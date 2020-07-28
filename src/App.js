@@ -142,8 +142,8 @@ class App extends Component {
     const image = document.getElementById('inputimage');
     const width = Number(image.width);
     const height = Number(image.height);
-    this.setState({ imgHeight: height }, console.log(height));
-    this.setState({ imgWidth: width }, console.log(width));
+    this.setState({ imgHeight: height }, console.log(''));
+    this.setState({ imgWidth: width }, console.log(''));
 
     //assigns a model ID depending on which Options button is clicked:
     var myOption;
@@ -249,8 +249,10 @@ class App extends Component {
           <div className="Content">
             <div className="details-options">
               <p>
-                Paste the link to the image below then click on one of the
-                following options (please note that some options may take a while to load):
+                Some options may take a few seconds to load, if there is no
+                response then either the image link didn't work or no objects
+                got detected for the chosen option. Paste the link to the image
+                below then click on one of the following options:
               </p>
               <ol>
                 <li> Faces: detect and show all faces in an image</li>
@@ -341,8 +343,8 @@ class App extends Component {
               <p>
                 Welcome to this image recognition app. It allows the user to
                 submit an image link and press one of the options to detect
-                objects in that image. With an account, the number of entries can be recorded. 
-                The results are calculated by artificial
+                objects in that image. With an account, the number of entries
+                can be recorded. The results are calculated by artificial
                 intelligence models made by Clarifai (
                 <a href="https://www.clarifai.com/">
                   {' '}
@@ -372,8 +374,8 @@ class App extends Component {
               <p>
                 Welcome to this image recognition app. It allows the user to
                 submit an image link and press one of the options to detect
-                objects in that image. With an account, the number of entries can be recorded. 
-                The results are calculated by artificial
+                objects in that image. With an account, the number of entries
+                can be recorded. The results are calculated by artificial
                 intelligence models made by Clarifai (
                 <a href="https://www.clarifai.com/">
                   {' '}

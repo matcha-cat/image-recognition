@@ -2,7 +2,6 @@ import React from 'react';
 import './Components.css';
 
 const Demographics = ({ boxes, imageUrl, myHeight, myWidth }) => {
-  console.log('hello from demographics');
   const height = myHeight;
   const width = myWidth;
   var boxesArray = [];
@@ -38,7 +37,6 @@ const Demographics = ({ boxes, imageUrl, myHeight, myWidth }) => {
       var name1 = boxes[p].data.concepts[k].name;
       var valueNum = boxes[p].data.concepts[k].value * 100;
       var value1 = Math.round(Number(valueNum));
-      //console.log(name1, vocab_id1, value1)
       traitsArray.push(<p>{name1}</p>);
       traitsArray.push(<p>{value1}%</p>);
     }

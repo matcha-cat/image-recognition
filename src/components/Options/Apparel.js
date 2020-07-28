@@ -2,24 +2,20 @@ import React from 'react';
 import './Components.css';
 
 const Apparel = ({ boxes, imageUrl, myHeight, myWidth }) => {
-  console.log('hello from apparel');
   const height = myHeight;
   const width = myWidth;
   var boxesArray = [];
   var boxesNum = boxes.length;
   var apparelArray = [];
   for (var p = 0; p < boxesNum; p++) {
-    console.log(boxes[p].data.concepts);
     var conceptsLength = boxes[p].data.concepts.length;
     apparelArray.push(<p className="heading-label">#{p + 1}</p>);
     apparelArray.push(<p> </p>);
 
     for (var k = 0; k < conceptsLength; k++) {
       var name1 = boxes[p].data.concepts[k].name;
-      console.log(name1);
       var valueNum = boxes[p].data.concepts[k].value * 100;
       var value1 = Math.round(Number(valueNum));
-      console.log(name1, value1);
       apparelArray.push(<p>{name1}</p>);
       apparelArray.push(<p>{value1}%</p>);
     }

@@ -5,8 +5,6 @@ const DetectBox = ({ boxes, imageUrl, myHeight, myWidth }) => {
   const height = myHeight;
   const width = myWidth;
   var boxesArray = [];
-  console.log(boxes);
-  console.log('Detect');
   var boxesNum = boxes.length;
   for (var i = 0; i < boxesNum; i++) {
     var leftCol = boxes[i].region_info.bounding_box.left_col * width;
