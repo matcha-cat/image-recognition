@@ -55,9 +55,9 @@
 .scrollbar{
   background-color: #F5F5F5;
   float: center;
+  height: 300px;
   overflow-y: scroll;
-  align-self: center;
 }
 .force-overflow {
-  min-height: 500px;
+  min-height: 450px;
 }
