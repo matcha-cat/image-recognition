@@ -66,7 +66,11 @@ const Demographics = ({ boxes, imageUrl, myHeight, myWidth }) => {
       </div>
       <ul className="table">
         <p className="heading-label">Demographics identified:</p>
+        <div className="scrollbar">
+          <div className="force-overflow" id="style-1">
         <div className="parent">{traitsArray}</div>
+        </div>
+        </div>
       </ul>
     </div>
   );
