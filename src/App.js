@@ -249,10 +249,11 @@ class App extends Component {
           <div className="Content">
             <div className="details-options">
               <p>
-                Some options may take a few seconds to load, if there is no
-                response then either the image link didn't work or no objects
-                got detected for the chosen option. Paste the link to the image
+                Paste the link to the image
                 below then click on one of the following options:
+                (some options may take a few seconds to load and if there is no
+                response then either the image link didn't work or no objects
+                got detected for the chosen option)
               </p>
               <ol>
                 <li> Faces: detect and show all faces in an image</li>
