@@ -56,10 +56,7 @@
   background-color: #F5F5F5;
   float: left;
   height: 300px;
-  margin-bottom: 25px;
-  margin-left: 22px;
-  margin-top: 40px;
-  width: 65px;
+  width: 20%;
   overflow-y: scroll;
 }
 .force-overflow {
