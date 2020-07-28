@@ -341,7 +341,8 @@ class App extends Component {
               <p>
                 Welcome to this image recognition app. It allows the user to
                 submit an image link and press one of the options to detect
-                objects in that image. The results are calculated by artificial
+                objects in that image. With an account, the number of entries can be recorded. 
+                The results are calculated by artificial
                 intelligence models made by Clarifai (
                 <a href="https://www.clarifai.com/">
                   {' '}
@@ -371,7 +372,8 @@ class App extends Component {
               <p>
                 Welcome to this image recognition app. It allows the user to
                 submit an image link and press one of the options to detect
-                objects in that image. The results are calculated by artificial
+                objects in that image. With an account, the number of entries can be recorded. 
+                The results are calculated by artificial
                 intelligence models made by Clarifai (
                 <a href="https://www.clarifai.com/">
                   {' '}
